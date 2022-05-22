@@ -37,8 +37,13 @@ input, button {
 #calculateBtn {
     font-size: 17px;
     font-weight: bold;
+    color: rgba(255, 0, 0, 0.836);
+}
+
+#calculateBtn:hover{
     color: azure;
-    background-color: rgba(255, 0, 0, 0.836);;
+    background-color: rgba(255, 0, 0, 0.836);
+    cursor: pointer;
 }
 
 .results{
