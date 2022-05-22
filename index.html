@@ -10,30 +10,34 @@
 
 <body>
     <form class="form">
-        <div class="calculator">
+        <div id="calculator">
             <h1> Calculadora  IMC</h1>
 
+            <p>Digite seu peso:</p>
             <input
             id="inputWeight"
             type="number"
-            min="1"
             placeholder="Seu peso"
             ></input>
 
+            <p>Digite sua altura:</p>
             <input 
             id="inputHeight"
             type="number"
-            min="1"
             placeholder="Sua altura"
             ></input>
 
             <button
-            type="submit"
+            onclick="calculateImc()"
             id="calculateBtn"
             >Calcular</button>
 
-            <div class="results" id="result">AAA</div>
-            <div  class="results" id="classification">AAA</div>
+            <div class="results" id="result">
+                <p>Seu resultado:</p> <br>
+                <p id="classification"></p>
+            </div>
+
+            <!-- <div  class="results" id="classification"></div> -->
 
         </div>
     </form>
